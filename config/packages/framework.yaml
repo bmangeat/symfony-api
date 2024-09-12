@@ -9,6 +9,9 @@ framework:
     #esi: true
     #fragments: true
     http_method_override: true
+    
+    mailer:
+        dsn: '%env(MAILER_DSN)%'
 
 when@test:
     framework:

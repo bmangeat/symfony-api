@@ -1,0 +1,8 @@
+{% block body %}
+<p>Bonjour</p>
+<p>L'utilisateur {{ data.name }} a contacté le support, voici le contenu de son message : </p>
+<blockquote class="blockquote">
+    <p>{{ data.message | nl2br }}</p>
+</blockquote>
+<p>Vous pouvez lui répondre à l'adresse mail suivante : {{ data.email }}</p>
+{% endblock %}

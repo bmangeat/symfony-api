@@ -38,6 +38,14 @@ services:
         networks:
             - symfony-network
 
+    mail: 
+        image: mailhog/mailhog
+        container_name: mail
+        ports:
+            - "8025:8025"
+        networks:
+            - symfony-network
+
 networks:
     symfony-network:
 
